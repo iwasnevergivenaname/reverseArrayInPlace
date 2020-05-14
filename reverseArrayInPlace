@@ -1,9 +1,11 @@
 
 function reverseInPlace(array) {
-  for (var i = 0; i<array.length; i+=2) {
+let l = array.length;
+
+  for (let i = 0; i < l; i += 2) {
      array.unshift(array[i]);
    }
-   array.splice(Math.floor(array.length/2), array.length/2);
+   array.splice(Math.floor(l / 2), l / 2);
    return array;
 }
 console.log(reverseInPlace([1,2,3,4,5]));
